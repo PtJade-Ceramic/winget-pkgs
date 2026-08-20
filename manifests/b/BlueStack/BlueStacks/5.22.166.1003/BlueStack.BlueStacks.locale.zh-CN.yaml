@@ -1,4 +1,4 @@
-# Created with YamlCreate.ps1 Dumplings Mod
+# Created with YamlCreate.ps1 v2.8.0 $debug=MDSU.CRLF.7-6-5.Win32NT
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
 
 PackageIdentifier: BlueStack.BlueStacks
@@ -16,11 +16,15 @@ LicenseUrl: https://www.bluestacks.com/terms-and-privacy.html#terms
 Copyright: Copyright © 2011-2026 BlueStack Systems Inc.
 CopyrightUrl: https://www.bluestacks.com/terms-and-privacy.html#terms
 ShortDescription: 在电脑上玩安卓游戏，或从我们的云端立即体验
+# Description:
+# Moniker:
 Tags:
 - 安卓
 - 模拟器
-ReleaseNotes: |-
-  1. 我们已进行了一些增强，以提升效能和稳定性，确保在 BlueStacks 5 上有更流畅的体验。
-  发行日期：2026 年 2 月 13 日
+# ReleaseNotes:
+# ReleaseNotesUrl:
+# PurchaseUrl:
+# InstallationNotes:
+# Documentations:
 ManifestType: locale
 ManifestVersion: 1.12.0
