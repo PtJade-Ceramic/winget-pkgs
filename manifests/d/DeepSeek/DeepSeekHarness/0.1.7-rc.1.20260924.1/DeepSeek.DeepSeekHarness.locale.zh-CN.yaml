@@ -132,12 +132,12 @@ Documentations:
 - DocumentLabel: 源代码
   DocumentUrl: https://github.com/deepseek-ai/deepseek-harness/tree/dsh-v0.1.7-rc.1/apps/desktop
 - DocumentLabel: 开发者文档
-  DocumentUrl: https://deepseek-harness.github.io/deepseek-harness/en/guide/quickstart
+  DocumentUrl: https://deepseek-harness.github.io/deepseek-harness/guide/quickstart
 - DocumentLabel: 社区插件
   DocumentUrl: https://github.com/topics/dsh-plugin
 - DocumentLabel: Cordis 论文
   DocumentUrl: https://arxiv.org/abs/2608.25512
 - DocumentLabel: 数据处理说明
-  DocumentUrl: https://www.deepseek.com/harness/en/data-processing/
+  DocumentUrl: https://www.deepseek.com/harness/data-processing/
 ManifestType: locale
 ManifestVersion: 1.12.0
