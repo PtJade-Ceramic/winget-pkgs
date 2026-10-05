@@ -15,6 +15,7 @@ InstallerSwitches:
   Log: --log_dir="<LOGPATH>"
 UpgradeBehavior: install
 ProductCode: Doubao
+ReleaseDate: 2025-03-20
 Installers:
 - Architecture: x64
   InstallerUrl: https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao_pc/1.49.8/Doubao_installer_1.49.8.exe
