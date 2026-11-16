@@ -1,0 +1,48 @@
+# Created with YamlCreate.ps1 Dumplings Mod
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
+
+PackageIdentifier: Autodesk.DesktopConnector
+PackageVersion: 2027.3.1.47
+PackageLocale: zh-CN
+PublisherUrl: https://www.autodesk.com.cn/
+PublisherSupportUrl: https://www.autodesk.com.cn/support
+License: 专有软件
+ShortDescription: 一款桌面应用程序，通过将文件同步到云端并理解设计文件之间的关系，从而简化文件管理。
+Description: |-
+  桌面连接器可无缝集成到您的设备中，轻松实现本地文件与云端文件的同步、管理和访问。它能够保留文件之间的关联和引用关系，确保设计完整性并减少错误。使用桌面连接器，您可以：
+  - 直观查看复杂的文件引用关系
+  - 保持项目信息实时更新
+  - 简化团队间的协作流程
+ReleaseNotes: |-
+  重要信息：
+  如果您是从早期主要版本升级（例如，17.x 升级到 2027.x），我们建议您运行重置实用程序，进行卸载，然后重新安装。对于次要版本升级，可以就地升级。有关完整说明，请参见更新 Desktop Connector 以了解手动安装，以及管理员部署手册以了解管理员部署安装。
+  重要信息：我们强烈建议所有使用 v2027.3.0.35 的用户尽快就地升级到 v2027.3.1.47，以修复 Autodesk 安全公告中提及的安全漏洞。从 2027.3.0.35 升级不需要卸载。
+  发布此版本的原因
+  - 漏洞 CVE-2026-15102 的修复：Desktop Connector v2027.3.0.35 包含的 ADP Desktop SDK 版本存在该漏洞。最新的 v2027.3.1.47 版本包含更新后的 ADP Desktop SDK，可修复该漏洞。
+  此版本还修复了以下问题
+  - 安装失败：从 manage.autodesk.com 进行的某些安装可能会失败，并显示安装管理器错误（退出状态：5）。此问题已解决，可确保安装成功。
+  注意：此版本包含以下 2027.3.0.35 发行说明中提及的所有增强功能和修复。
+
+  2026 年 10 月 26 日 (v2027.3.0.35)
+  由于 Autodesk 安全公告中披露的高严重性安全漏洞，此版本的下载已撤回。内部版本 2027.3.1.47 修复了此漏洞。如果您当前使用的是受影响的版本 (2027.3.0.35)，我们强烈建议升级到 2027.3.1.47。
+
+  新特性
+  - 数据面板现已更名为详细信息面板：现在，数据面板在 Desktop Connector 中出现的所有位置（包括主页任务菜单和设置）都称为详细信息面板。对于 Autodesk Forma 文件，详细信息面板显示的文件属性与数据面板显示的相同。详细了解详细信息面板。
+  - 详细信息面板中的文件缩略图：详细信息面板现在显示选定文件的缩略图，以便您在打开或编辑文件之前确认它是正确的文件。如果缩略图不可用，则面板会改为显示文件类型图标。
+  - 从详细信息面板生成预览：对于 Autodesk Forma 文件，您现在可以在详细信息面板中选择“生成预览”，为选定文件创建可视化预览，类似于“查看处理”。准备就绪后，您可以在面板中查看预览并与之交互。“生成预览”主要面向 Autodesk Forma 3D 可视化预览。它不适用于 Autodesk Fusion 连接的驱动器或无法在查看器中预览的文件类型，如 Microsoft Office 文档或文本文件。
+  增强的用户体验
+  - 更清晰的权限更新消息：有关权限更新的消息现在使用更清晰的措辞，因此自行解决的例行权限检查不再看起来像错误。
+  - 更清晰的已存档文件通知：当文件因已存档而无法下载时，下载通知现在会说明该文件不可用，而不是显示通用的服务错误。
+  - 更顺畅的更新：运行 Desktop Connector 安装程序时，如果 Desktop Connector 应用程序正在运行，安装程序将自动将其关闭，然后继续更新。
+  错误修复和稳定性
+  权限
+  - 减少了同步期间重复的权限检查：解决了 Desktop Connector 可能会针对权限未更改的项目在每个同步周期都安排一次权限检查的问题。Desktop Connector 现在仅在需要时安排权限检查。
+  - 解决了主屏幕卡在“无法更新权限”的问题：解决了在应用权限期间文件夹不断变化时，项目的主屏幕可能会一直停留在“无法更新权限”的问题。
+  - 无法完成的权限更新的重试频率降低：当权限更新无法完成时，Desktop Connector 仍会自动重试，但现在重试频率更低，会在重新启动后或您重新添加项目时重试。这减少了后台活动，并有助于保持 Desktop Connector 的响应速度。
+  同步可靠性
+  - 解决了脱机重命名后文件夹移动不同步的问题：解决了当您在脱机状态下重命名了文件夹而另一用户移动了同一文件夹时，Desktop Connector 在您重新连接后同步了重命名但未同步移动的问题。Desktop Connector 现在会应用这两项更改，或显示冲突，以便您解决。
+  - 解决了同步暂停问题：解决了 Desktop Connector 可能会停止同步并显示“同步已暂停，直到 Desktop Connector 更新完成”消息的问题。这影响了有权访问 Autodesk Forma 项目或 Autodesk Fusion 项目但不能同时访问这两者的用户。同步现在会按预期继续进行。
+  - 解决了升级到 2027.2.x 后发生的意外冲突：从早期版本的 Desktop Connector 升级到 2027.2.x 后，您可能会看到只有您正在编辑的文件存在冲突。这些冲突仅影响该用户，是由升级期间创建的 Desktop Connector 数据库中的不匹配导致的。Desktop Connector 2027.3.0 包含一项修复，可在您升级时自动修复数据库。
+ReleaseNotesUrl: https://help.autodesk.com/view/CONNECT/CHS/?guid=GUID-03D59AAD-65B0-45E3-84F2-A12AAA5BB267
+ManifestType: locale
+ManifestVersion: 1.12.0
